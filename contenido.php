@@ -1,53 +1,73 @@
 <?php
 /**
  * Contenido editable del sitio. Cambie aquí los textos, cifras y datos de contacto;
- * no hace falta tocar index.php. Los valores marcados con [EDITAR] son de ejemplo.
+ * no hace falta tocar index.php. Textos tomados del sitio actual proactionconsultores.cl.
  */
 return [
-    'nombre'    => 'ProAction',
-    'eslogan'   => 'Gestión tributaria externalizada',
-    'titulo'    => 'Su tranquilidad tributaria, en manos expertas',
-    'bajada'    => 'Nos hacemos cargo de sus impuestos, contabilidad y remuneraciones para que usted se concentre en hacer crecer su negocio.',
-    'descripcion_meta' => 'ProAction: gestión tributaria, contabilidad y remuneraciones externalizadas para empresas y personas.',
+    'nombre'    => 'Proaction Consultores',
+    'eslogan'   => 'Asesoría contable, tributaria y financiera para pymes',
+    'titulo'    => 'Planifica el futuro de tu empresa ahora mismo',
+    'bajada'    => 'Entendemos que cada empresa es única. Te ayudamos a ordenar tus finanzas, optimizar tus impuestos y conseguir el capital que necesitas para crecer.',
+    'descripcion_meta' => 'Proaction Consultores: asesoría contable y tributaria, estrategia financiera y levantamiento de capital para pymes.',
 
-    // [EDITAR] Datos de contacto
     'contacto' => [
-        'correo'    => 'contacto@proaction.cl',   // también recibe el formulario
-        'telefono'  => '+56 2 0000 0000',
-        'direccion' => 'Santiago, Chile',
-        'horario'   => 'Lunes a viernes, 9:00 a 18:00',
+        'correo'    => 'contacto@proactionconsultores.cl',   // también recibe el formulario
+        'telefonos' => ['+56 9 9991 1465', '+56 9 9842 0454'],
+        'whatsapp'  => '56999911465',                         // solo números, con código de país
+        'direccion' => '',                                    // opcional: déjela vacía para ocultarla
+        'horario'   => '',                                    // opcional
     ],
 
-    // Iconos: nombres de assets/icons en index.php (ver función icono())
     'servicios' => [
-        ['icono' => 'impuestos',  'titulo' => 'Gestión tributaria',  'texto' => 'Declaraciones mensuales (F29) y anuales (renta), recuperación de remanentes y apoyo ante el SII.'],
-        ['icono' => 'contable',   'titulo' => 'Contabilidad',         'texto' => 'Contabilidad completa y al día, balances y estados financieros claros para tomar decisiones.'],
-        ['icono' => 'personas',   'titulo' => 'Remuneraciones',       'texto' => 'Liquidaciones de sueldo, contratos, finiquitos y declaraciones previsionales sin errores.'],
-        ['icono' => 'empresa',    'titulo' => 'Constitución y trámites', 'texto' => 'Creación de empresas, modificaciones, inicio de actividades y trámites municipales.'],
-        ['icono' => 'asesoria',   'titulo' => 'Asesoría y planificación', 'texto' => 'Planificación tributaria, elección de régimen y análisis para pagar lo justo y a tiempo.'],
-        ['icono' => 'documentos', 'titulo' => 'Orden documental',      'texto' => 'Respaldo digital de sus documentos y recordatorios de cada vencimiento.'],
+        ['icono' => 'impuestos',  'titulo' => 'Consultorías contables y tributarias', 'texto' => 'Asesoría completa en análisis tributario, para que tus obligaciones no sean un problema que afecte tu operación.'],
+        ['icono' => 'asesoria',   'titulo' => 'Consultorías en estrategia',            'texto' => 'Planificación estratégica y financiera orientada a tus objetivos: crecimiento, cuota de mercado, pricing y estrategia comercial.'],
+        ['icono' => 'contable',   'titulo' => 'Consultorías en gestión',               'texto' => 'Evaluación y levantamiento de procesos, reingeniería, diseño de KPIs, análisis de datos y reportes para decidir mejor.'],
+        ['icono' => 'empresa',    'titulo' => 'Formación de empresas',                 'texto' => 'Te acompañamos desde cero: registro, inicio de actividades y verificación en el SII para que puedas facturar con todo en regla.'],
+        ['icono' => 'capital',    'titulo' => 'Financiamiento y capital de trabajo',   'texto' => 'Preparamos tu empresa, en lo contable y tributario, para obtener financiamiento en bancos e instituciones financieras.'],
+        ['icono' => 'marketing',  'titulo' => 'Marketing digital y redes sociales',    'texto' => 'Marketing digital 360 y planificación de redes sociales para generar leads y aumentar las ventas de tu negocio.'],
     ],
 
-    // [EDITAR] Cifras animadas: 'valor' es numérico, 'prefijo'/'sufijo' son opcionales
+    // 'valor' numérico; 'decimales' opcional. Mismos datos que el contador del sitio actual.
     'cifras' => [
-        ['valor' => 12,   'prefijo' => '+', 'sufijo' => '',  'texto' => 'años de experiencia'],
-        ['valor' => 150,  'prefijo' => '+', 'sufijo' => '',  'texto' => 'clientes activos'],
-        ['valor' => 1800, 'prefijo' => '+', 'sufijo' => '',  'texto' => 'declaraciones al año'],
-        ['valor' => 99,   'prefijo' => '',  'sufijo' => '%', 'texto' => 'presentadas dentro de plazo'],
+        ['valor' => 30,  'decimales' => 0, 'prefijo' => '',  'sufijo' => '',      'texto' => 'años en el rubro'],
+        ['valor' => 500, 'decimales' => 0, 'prefijo' => '+', 'sufijo' => '',      'texto' => 'clientes contentos'],
+        ['valor' => 3,   'decimales' => 0, 'prefijo' => '',  'sufijo' => '',      'texto' => 'especialistas en el equipo multidisciplinario'],
+        ['valor' => 5.5, 'decimales' => 1, 'prefijo' => 'US$', 'sufijo' => ' M', 'texto' => 'en capital levantado para clientes'],
     ],
 
-    // Barras del gráfico animado de la portada (ejemplo ilustrativo)
+    // Barras del gráfico animado de la portada: solo ilustrativo, no son datos reales.
     'grafico' => [
-        'titulo' => 'Cumplimiento tributario',
-        'barras' => [['E', 62], ['F', 70], ['M', 78], ['A', 84], ['M', 91], ['J', 100]],
+        'titulo' => 'Tu empresa, en crecimiento',
+        'insignia' => 'Ilustrativo',
+        'barras' => [['E', 40], ['F', 52], ['M', 61], ['A', 74], ['M', 86], ['J', 100]],
+    ],
+
+    'pasos' => [
+        ['titulo' => 'Diagnóstico gratuito',  'texto' => 'Revisamos tu situación contable, tributaria y financiera, y el objetivo de tu empresa.'],
+        ['titulo' => 'Plan a medida',         'texto' => 'Definimos qué necesitas: llevanza, revisión puntual, estrategia o financiamiento.'],
+        ['titulo' => 'Ejecución',             'texto' => 'Nos hacemos cargo, con reportes que se entienden y avisos antes de cada vencimiento.'],
+        ['titulo' => 'Seguimiento',           'texto' => 'Medimos resultados y ajustamos el plan a medida que tu empresa crece.'],
     ],
 
     'nosotros' => [
-        'titulo' => 'Un equipo que se compromete con sus resultados',
+        'titulo' => 'Tu aliado estratégico en cada paso',
         'texto'  => [
-            'Somos un estudio especializado en gestión tributaria externalizada. Cada cliente tiene un ejecutivo a cargo que conoce su negocio y responde con rapidez.',
-            'Combinamos criterio profesional con tecnología propia: seguimos cada tarea, vencimiento y documento para que nada se pase por alto.',
+            'En Proaction nos dedicamos a ofrecer soluciones personalizadas a las pymes. No solo nos enfocamos en la contabilidad tributaria: te acompañamos en el desarrollo de estrategias financieras que te permiten optimizar tus recursos y crecer de manera sostenible.',
         ],
-        'valores' => ['Cercanía y respuesta rápida', 'Rigor y confidencialidad', 'Tecnología al servicio del cliente'],
+        'mision'  => 'Ser tu socio estratégico, entregándote herramientas y conocimiento sólido para que cada decisión financiera esté alineada con tus objetivos de largo plazo.',
+        'vision'  => 'Ser el referente en asesoría y contabilidad para pymes, reconocidos por la innovación y el foco en el cliente.',
+        'valores' => ['Integridad', 'Transparencia', 'Excelencia'],
+    ],
+
+    'equipo' => [
+        ['nombre' => 'Ignacio Bravo', 'cargo' => 'Cofundador y CFO',  'detalle' => 'Ingeniero Comercial, Analista de Datos, Consultor BPO'],
+        ['nombre' => 'Arturo Bravo',  'cargo' => 'Cofundador y CEO',  'detalle' => 'Ingeniero Comercial, Especialista Financiero, Consultor Contable'],
+        ['nombre' => 'Myriam Jaime',  'cargo' => 'Análisis jurídico y compliance', 'detalle' => 'Consultoría en inversiones inmobiliarias'],
+    ],
+
+    'testimonios' => [
+        ['texto' => 'Proaction Consultores nos ayudó a ordenar nuestras finanzas y nuestra contabilidad. Estamos muy agradecidos de trabajar junto a ellos.', 'autor' => 'Miguel Arancibia', 'cargo' => 'CEO, Pixamar'],
+        ['texto' => 'Nos dieron una asesoría completa, contable y tributaria, que nos permitió ordenar nuestras finanzas y conseguir capital de trabajo en entidades financieras.', 'autor' => 'Andrés Sotomayor', 'cargo' => 'Cliente'],
+        ['texto' => 'Con Proaction formamos nuestra empresa y además realizaron una auditoría contable: teníamos un desorden contable y tributario. Estamos felices.', 'autor' => 'Sandra Belmar', 'cargo' => 'Cliente'],
     ],
 ];

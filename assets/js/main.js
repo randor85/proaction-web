@@ -39,20 +39,21 @@
 
     // Contadores animados
     function contar(el) {
-        var meta = parseInt(el.getAttribute('data-contar'), 10);
+        var meta = parseFloat(el.getAttribute('data-contar'));
+        var dec = parseInt(el.getAttribute('data-decimales'), 10) || 0;
         var duracion = 1600, inicio = null;
         function paso(t) {
             if (inicio === null) inicio = t;
             var p = Math.min((t - inicio) / duracion, 1);
             var suave = 1 - Math.pow(1 - p, 3);
-            el.textContent = Math.round(meta * suave).toLocaleString('es-CL');
+            el.textContent = (meta * suave).toLocaleString('es-CL', { minimumFractionDigits: dec, maximumFractionDigits: dec });
             if (p < 1) requestAnimationFrame(paso);
         }
         requestAnimationFrame(paso);
     }
     var contadores = document.querySelectorAll('[data-contar]');
     if ('IntersectionObserver' in window && !reducir) {
-        contadores.forEach(function (el) { el.textContent = '0'; });
+        contadores.forEach(function (el) { el.textContent = (0).toLocaleString('es-CL', { minimumFractionDigits: parseInt(el.getAttribute('data-decimales'), 10) || 0 }); });
         var obsContar = new IntersectionObserver(function (items) {
             items.forEach(function (it) {
                 if (it.isIntersecting) { contar(it.target); obsContar.unobserve(it.target); }

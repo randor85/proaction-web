@@ -3,9 +3,10 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>ProAction · Gestión tributaria externalizada</title>
-    <meta name="description" content="ProAction: gestión tributaria, contabilidad y remuneraciones externalizadas para empresas y personas.">
-    <meta name="theme-color" content="#0f172a">
+    <title>Proaction Consultores · Asesoría contable, tributaria y financiera para pymes</title>
+    <meta name="description" content="Proaction Consultores: asesoría contable y tributaria, estrategia financiera y levantamiento de capital para pymes.">
+    <meta name="theme-color" content="#071a2e">
+    <link rel="icon" type="image/png" href="../assets/img/icono.png">
     <link rel="stylesheet" href="../assets/css/style.css">
     <script src="../assets/js/main.js" defer></script>
 </head>
@@ -13,12 +14,13 @@
 <div class="aviso-maqueta">Maqueta HTML de respaldo · el formulario de contacto solo funciona en la versión PHP</div>
 
 <header class="barra" id="barra">
-    <a class="marca" href="#inicio"><span class="marca-logo">P</span>ProAction</a>
+    <a class="marca" href="#inicio" aria-label="Proaction Consultores"><img src="../assets/img/logo-blanco.png" alt="Proaction Consultores" width="160" height="40"></a>
     <button class="menu-boton" id="menuBoton" aria-label="Abrir menú" aria-expanded="false"><span></span><span></span><span></span></button>
     <nav class="menu" id="menu">
         <a href="#servicios">Servicios</a>
-        <a href="#cifras">Cifras</a>
+        <a href="#metodo">Cómo trabajamos</a>
         <a href="#nosotros">Nosotros</a>
+        <a href="#clientes">Clientes</a>
         <a href="#contacto" class="boton boton-chico">Contacto</a>
     </nav>
 </header>
@@ -28,37 +30,37 @@
         <div class="fondo-animado" aria-hidden="true"><i></i><i></i><i></i></div>
         <div class="contenedor hero-grid">
             <div class="hero-texto">
-                <p class="etiqueta">Gestión tributaria externalizada</p>
-                <h1>Su tranquilidad tributaria, en manos expertas</h1>
-                <p class="bajada">Nos hacemos cargo de sus impuestos, contabilidad y remuneraciones para que usted se concentre en hacer crecer su negocio.</p>
+                <p class="etiqueta">Asesoría contable, tributaria y financiera para pymes</p>
+                <h1>Planifica el futuro de tu empresa ahora mismo</h1>
+                <p class="bajada">Entendemos que cada empresa es única. Te ayudamos a ordenar tus finanzas, optimizar tus impuestos y conseguir el capital que necesitas para crecer.</p>
                 <div class="acciones">
-                    <a class="boton" href="#contacto">Solicitar una reunión</a>
+                    <a class="boton" href="#contacto">Agenda una consulta gratuita</a>
                     <a class="boton boton-claro" href="#servicios">Ver servicios</a>
                 </div>
             </div>
-            <div class="tarjeta-grafico" aria-label="Cumplimiento tributario">
+            <div class="tarjeta-grafico" aria-label="Tu empresa, en crecimiento (ilustrativo)">
                 <div class="tg-cabecera">
-                    <span>Cumplimiento tributario</span>
-                    <span class="tg-badge">En plazo</span>
+                    <span>Tu empresa, en crecimiento</span>
+                    <span class="tg-badge">Ilustrativo</span>
                 </div>
                 <div class="barras">
-                                            <div class="barra-col" style="--hn: 0.62; --d: 0ms">
+                                            <div class="barra-col" style="--hn: 0.4; --d: 0ms">
                             <div class="barra-valor"></div>
                             <span>E</span>
                         </div>
-                                            <div class="barra-col" style="--hn: 0.7; --d: 90ms">
+                                            <div class="barra-col" style="--hn: 0.52; --d: 90ms">
                             <div class="barra-valor"></div>
                             <span>F</span>
                         </div>
-                                            <div class="barra-col" style="--hn: 0.78; --d: 180ms">
+                                            <div class="barra-col" style="--hn: 0.61; --d: 180ms">
                             <div class="barra-valor"></div>
                             <span>M</span>
                         </div>
-                                            <div class="barra-col" style="--hn: 0.84; --d: 270ms">
+                                            <div class="barra-col" style="--hn: 0.74; --d: 270ms">
                             <div class="barra-valor"></div>
                             <span>A</span>
                         </div>
-                                            <div class="barra-col" style="--hn: 0.91; --d: 360ms">
+                                            <div class="barra-col" style="--hn: 0.86; --d: 360ms">
                             <div class="barra-valor"></div>
                             <span>M</span>
                         </div>
@@ -74,79 +76,159 @@
         </div>
     </section>
 
+    <section class="cifras" id="cifras">
+        <div class="contenedor grilla cifras-grilla">
+                            <div class="cifra revelar" style="--d: 0ms">
+                    <strong><span data-contar="30" data-decimales="0">30</span></strong>
+                    <span>años en el rubro</span>
+                </div>
+                            <div class="cifra revelar" style="--d: 90ms">
+                    <strong>+<span data-contar="500" data-decimales="0">500</span></strong>
+                    <span>clientes contentos</span>
+                </div>
+                            <div class="cifra revelar" style="--d: 180ms">
+                    <strong><span data-contar="3" data-decimales="0">3</span></strong>
+                    <span>especialistas en el equipo multidisciplinario</span>
+                </div>
+                            <div class="cifra revelar" style="--d: 270ms">
+                    <strong>US$<span data-contar="5.5" data-decimales="1">5,5</span> M</strong>
+                    <span>en capital levantado para clientes</span>
+                </div>
+                    </div>
+    </section>
+
     <section class="seccion" id="servicios">
         <div class="contenedor">
             <header class="seccion-cabecera revelar">
                 <p class="etiqueta">Servicios</p>
-                <h2>Todo lo que su empresa necesita, en un solo lugar</h2>
+                <h2>¿Qué es lo que hacemos?</h2>
+                <p class="subtitulo">Soluciones personalizadas para que tu pyme ordene sus números, pague lo justo y crezca con respaldo.</p>
             </header>
             <div class="grilla servicios">
                                     <article class="tarjeta revelar" style="--d: 0ms">
                         <div class="tarjeta-icono"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3h9l4 4v14H6z"/><path d="M14 3v5h5"/><path d="M9 13h6M9 17h4"/></svg></div>
-                        <h3>Gestión tributaria</h3>
-                        <p>Declaraciones mensuales (F29) y anuales (renta), recuperación de remanentes y apoyo ante el SII.</p>
-                    </article>
-                                    <article class="tarjeta revelar" style="--d: 90ms">
-                        <div class="tarjeta-icono"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 7h8M8 12h2M12 12h2M16 12h0M8 16h2M12 16h2M16 16h0"/></svg></div>
-                        <h3>Contabilidad</h3>
-                        <p>Contabilidad completa y al día, balances y estados financieros claros para tomar decisiones.</p>
-                    </article>
-                                    <article class="tarjeta revelar" style="--d: 180ms">
-                        <div class="tarjeta-icono"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="8" r="3"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6"/><path d="M16 5.5a3 3 0 010 5M21 20c0-2.5-1.5-4.6-3.7-5.5"/></svg></div>
-                        <h3>Remuneraciones</h3>
-                        <p>Liquidaciones de sueldo, contratos, finiquitos y declaraciones previsionales sin errores.</p>
-                    </article>
-                                    <article class="tarjeta revelar" style="--d: 0ms">
-                        <div class="tarjeta-icono"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 21V8l8-5 8 5v13"/><path d="M9 21v-6h6v6M9 11h0M15 11h0"/></svg></div>
-                        <h3>Constitución y trámites</h3>
-                        <p>Creación de empresas, modificaciones, inicio de actividades y trámites municipales.</p>
+                        <h3>Consultorías contables y tributarias</h3>
+                        <p>Asesoría completa en análisis tributario, para que tus obligaciones no sean un problema que afecte tu operación.</p>
                     </article>
                                     <article class="tarjeta revelar" style="--d: 90ms">
                         <div class="tarjeta-icono"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 19V5M4 19h16"/><path d="M8 15l4-4 3 3 5-6"/></svg></div>
-                        <h3>Asesoría y planificación</h3>
-                        <p>Planificación tributaria, elección de régimen y análisis para pagar lo justo y a tiempo.</p>
+                        <h3>Consultorías en estrategia</h3>
+                        <p>Planificación estratégica y financiera orientada a tus objetivos: crecimiento, cuota de mercado, pricing y estrategia comercial.</p>
                     </article>
                                     <article class="tarjeta revelar" style="--d: 180ms">
-                        <div class="tarjeta-icono"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 7a2 2 0 012-2h4l2 2h8a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2z"/></svg></div>
-                        <h3>Orden documental</h3>
-                        <p>Respaldo digital de sus documentos y recordatorios de cada vencimiento.</p>
+                        <div class="tarjeta-icono"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 7h8M8 12h2M12 12h2M16 12h0M8 16h2M12 16h2M16 16h0"/></svg></div>
+                        <h3>Consultorías en gestión</h3>
+                        <p>Evaluación y levantamiento de procesos, reingeniería, diseño de KPIs, análisis de datos y reportes para decidir mejor.</p>
+                    </article>
+                                    <article class="tarjeta revelar" style="--d: 0ms">
+                        <div class="tarjeta-icono"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 21V8l8-5 8 5v13"/><path d="M9 21v-6h6v6M9 11h0M15 11h0"/></svg></div>
+                        <h3>Formación de empresas</h3>
+                        <p>Te acompañamos desde cero: registro, inicio de actividades y verificación en el SII para que puedas facturar con todo en regla.</p>
+                    </article>
+                                    <article class="tarjeta revelar" style="--d: 90ms">
+                        <div class="tarjeta-icono"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M14.5 9.2c-.6-.8-1.5-1.2-2.5-1.2-1.4 0-2.5.8-2.5 1.9 0 2.6 5 1.3 5 3.9 0 1.1-1.1 2-2.5 2-1.1 0-2-.5-2.6-1.3M12 6.5V8m0 8v1.5"/></svg></div>
+                        <h3>Financiamiento y capital de trabajo</h3>
+                        <p>Preparamos tu empresa, en lo contable y tributario, para obtener financiamiento en bancos e instituciones financieras.</p>
+                    </article>
+                                    <article class="tarjeta revelar" style="--d: 180ms">
+                        <div class="tarjeta-icono"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 11v2a1 1 0 001 1h3l5 4V6L7 10H4a1 1 0 00-1 1z"/><path d="M16 9a4 4 0 010 6M18.5 6.5a8 8 0 010 11"/></svg></div>
+                        <h3>Marketing digital y redes sociales</h3>
+                        <p>Marketing digital 360 y planificación de redes sociales para generar leads y aumentar las ventas de tu negocio.</p>
                     </article>
                             </div>
         </div>
     </section>
 
-    <section class="cifras" id="cifras">
-        <div class="contenedor grilla cifras-grilla">
-                            <div class="cifra revelar" style="--d: 0ms">
-                    <strong>+<span data-contar="12">12</span></strong>
-                    <span>años de experiencia</span>
-                </div>
-                            <div class="cifra revelar" style="--d: 90ms">
-                    <strong>+<span data-contar="150">150</span></strong>
-                    <span>clientes activos</span>
-                </div>
-                            <div class="cifra revelar" style="--d: 180ms">
-                    <strong>+<span data-contar="1800">1800</span></strong>
-                    <span>declaraciones al año</span>
-                </div>
-                            <div class="cifra revelar" style="--d: 270ms">
-                    <strong><span data-contar="99">99</span>%</strong>
-                    <span>presentadas dentro de plazo</span>
-                </div>
-                    </div>
+    <section class="seccion seccion-gris" id="metodo">
+        <div class="contenedor">
+            <header class="seccion-cabecera revelar">
+                <p class="etiqueta">Cómo trabajamos</p>
+                <h2>Un proceso simple, que parte sin costo</h2>
+            </header>
+            <ol class="pasos">
+                                    <li class="paso revelar" style="--d: 0ms">
+                        <span class="paso-num">1</span>
+                        <h3>Diagnóstico gratuito</h3>
+                        <p>Revisamos tu situación contable, tributaria y financiera, y el objetivo de tu empresa.</p>
+                    </li>
+                                    <li class="paso revelar" style="--d: 90ms">
+                        <span class="paso-num">2</span>
+                        <h3>Plan a medida</h3>
+                        <p>Definimos qué necesitas: llevanza, revisión puntual, estrategia o financiamiento.</p>
+                    </li>
+                                    <li class="paso revelar" style="--d: 180ms">
+                        <span class="paso-num">3</span>
+                        <h3>Ejecución</h3>
+                        <p>Nos hacemos cargo, con reportes que se entienden y avisos antes de cada vencimiento.</p>
+                    </li>
+                                    <li class="paso revelar" style="--d: 270ms">
+                        <span class="paso-num">4</span>
+                        <h3>Seguimiento</h3>
+                        <p>Medimos resultados y ajustamos el plan a medida que tu empresa crece.</p>
+                    </li>
+                            </ol>
+        </div>
     </section>
 
     <section class="seccion" id="nosotros">
         <div class="contenedor nosotros-grid">
             <div class="revelar">
                 <p class="etiqueta">Nosotros</p>
-                <h2>Un equipo que se compromete con sus resultados</h2>
-                <p>Somos un estudio especializado en gestión tributaria externalizada. Cada cliente tiene un ejecutivo a cargo que conoce su negocio y responde con rapidez.</p><p>Combinamos criterio profesional con tecnología propia: seguimos cada tarea, vencimiento y documento para que nada se pase por alto.</p>            </div>
-            <ul class="valores revelar" style="--d: 120ms">
-                                    <li><span class="valor-check"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span>Cercanía y respuesta rápida</li>
-                                    <li><span class="valor-check"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span>Rigor y confidencialidad</li>
-                                    <li><span class="valor-check"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span>Tecnología al servicio del cliente</li>
-                            </ul>
+                <h2>Tu aliado estratégico en cada paso</h2>
+                <p class="tenue">En Proaction nos dedicamos a ofrecer soluciones personalizadas a las pymes. No solo nos enfocamos en la contabilidad tributaria: te acompañamos en el desarrollo de estrategias financieras que te permiten optimizar tus recursos y crecer de manera sostenible.</p>                <div class="mv">
+                    <div><h3>Misión</h3><p>Ser tu socio estratégico, entregándote herramientas y conocimiento sólido para que cada decisión financiera esté alineada con tus objetivos de largo plazo.</p></div>
+                    <div><h3>Visión</h3><p>Ser el referente en asesoría y contabilidad para pymes, reconocidos por la innovación y el foco en el cliente.</p></div>
+                </div>
+                <ul class="valores-chips">
+                    <li><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Integridad</li><li><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Transparencia</li><li><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Excelencia</li>                </ul>
+            </div>
+            <figure class="foto revelar" style="--d: 120ms">
+                <img src="../assets/img/equipo-trabajo.jpg" alt="Equipo revisando reportes financieros" width="800" height="581" loading="lazy">
+            </figure>
+        </div>
+
+        <div class="contenedor equipo">
+                            <article class="miembro revelar" style="--d: 0ms">
+                    <span class="avatar" aria-hidden="true">I</span>
+                    <h3>Ignacio Bravo</h3>
+                    <p class="cargo">Cofundador y CFO</p>
+                    <p class="tenue">Ingeniero Comercial, Analista de Datos, Consultor BPO</p>
+                </article>
+                            <article class="miembro revelar" style="--d: 90ms">
+                    <span class="avatar" aria-hidden="true">A</span>
+                    <h3>Arturo Bravo</h3>
+                    <p class="cargo">Cofundador y CEO</p>
+                    <p class="tenue">Ingeniero Comercial, Especialista Financiero, Consultor Contable</p>
+                </article>
+                            <article class="miembro revelar" style="--d: 180ms">
+                    <span class="avatar" aria-hidden="true">M</span>
+                    <h3>Myriam Jaime</h3>
+                    <p class="cargo">Análisis jurídico y compliance</p>
+                    <p class="tenue">Consultoría en inversiones inmobiliarias</p>
+                </article>
+                    </div>
+    </section>
+
+    <section class="seccion seccion-gris" id="clientes">
+        <div class="contenedor">
+            <header class="seccion-cabecera revelar">
+                <p class="etiqueta">Clientes</p>
+                <h2>Lo que dicen quienes ya trabajan con nosotros</h2>
+            </header>
+            <div class="grilla testimonios">
+                                    <blockquote class="testimonio revelar" style="--d: 0ms">
+                        <p>Proaction Consultores nos ayudó a ordenar nuestras finanzas y nuestra contabilidad. Estamos muy agradecidos de trabajar junto a ellos.</p>
+                        <footer><strong>Miguel Arancibia</strong><span>CEO, Pixamar</span></footer>
+                    </blockquote>
+                                    <blockquote class="testimonio revelar" style="--d: 90ms">
+                        <p>Nos dieron una asesoría completa, contable y tributaria, que nos permitió ordenar nuestras finanzas y conseguir capital de trabajo en entidades financieras.</p>
+                        <footer><strong>Andrés Sotomayor</strong><span>Cliente</span></footer>
+                    </blockquote>
+                                    <blockquote class="testimonio revelar" style="--d: 180ms">
+                        <p>Con Proaction formamos nuestra empresa y además realizaron una auditoría contable: teníamos un desorden contable y tributario. Estamos felices.</p>
+                        <footer><strong>Sandra Belmar</strong><span>Cliente</span></footer>
+                    </blockquote>
+                            </div>
         </div>
     </section>
 
@@ -154,18 +236,18 @@
         <div class="contenedor contacto-grid">
             <div class="revelar">
                 <p class="etiqueta etiqueta-clara">Contacto</p>
-                <h2>Conversemos sobre su empresa</h2>
-                <p>Cuéntenos qué necesita y le responderemos a la brevedad.</p>
+                <h2>Agenda tu consulta gratuita</h2>
+                <p>Cuéntanos qué necesita tu empresa y te respondemos con el primer paso.</p>
                 <ul class="datos">
-                    <li><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg><a href="mailto:contacto@proaction.cl">contacto@proaction.cl</a></li>
-                    <li><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 005 5L15 13l5 2v4a2 2 0 01-2 2A15 15 0 013 6a2 2 0 012-2z"/></svg><a href="tel:+56200000000">+56 2 0000 0000</a></li>
-                    <li><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s7-6.2 7-11a7 7 0 10-14 0c0 4.8 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>Santiago, Chile</li>
-                    <li><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>Lunes a viernes, 9:00 a 18:00</li>
-                </ul>
+                    <li><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg><a href="mailto:contacto@proactionconsultores.cl">contacto@proactionconsultores.cl</a></li>
+                                            <li><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 005 5L15 13l5 2v4a2 2 0 01-2 2A15 15 0 013 6a2 2 0 012-2z"/></svg><a href="tel:+56999911465">+56 9 9991 1465</a></li>
+                                            <li><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 005 5L15 13l5 2v4a2 2 0 01-2 2A15 15 0 013 6a2 2 0 012-2z"/></svg><a href="tel:+56998420454">+56 9 9842 0454</a></li>
+                                                                            </ul>
+                <a class="boton boton-wa" href="https://wa.me/56999911465?text=Hola%2C%20quiero%20agendar%20una%20consulta%20gratuita." target="_blank" rel="noopener"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21l1.6-5A8.5 8.5 0 1112 20.5a8.4 8.4 0 01-4-1z"/><path d="M9 8.5c0 3.5 3 6.5 6.5 6.5l1-1.5-2-1-1 .8a4 4 0 01-2-2l.8-1-1-2z"/></svg>Escríbenos por WhatsApp</a>
             </div>
             <form class="formulario revelar" style="--d: 120ms" method="post" action="#contacto" onsubmit="return false">
                                                 <input type="hidden" name="csrf" value="">
-                <div class="trampa" aria-hidden="true"><label>No complete este campo<input type="text" name="sitio_web" tabindex="-1" autocomplete="off"></label></div>
+                <div class="trampa" aria-hidden="true"><label>No completes este campo<input type="text" name="sitio_web" tabindex="-1" autocomplete="off"></label></div>
                 <label>Nombre<input type="text" name="nombre" required maxlength="100" autocomplete="name"></label>
                 <div class="fila">
                     <label>Correo<input type="email" name="correo" required maxlength="150" autocomplete="email"></label>
@@ -180,9 +262,11 @@
 
 <footer class="pie">
     <div class="contenedor pie-grid">
-        <span>© 2026 ProAction · Gestión tributaria externalizada</span>
+        <span>© 2026 Proaction Consultores · Asesoría contable, tributaria y financiera para pymes</span>
         <a href="#inicio">Volver arriba ↑</a>
     </div>
 </footer>
+
+<a class="wa-flotante" href="https://wa.me/56999911465?text=Hola%2C%20quiero%20agendar%20una%20consulta%20gratuita." target="_blank" rel="noopener" aria-label="Escríbenos por WhatsApp"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21l1.6-5A8.5 8.5 0 1112 20.5a8.4 8.4 0 01-4-1z"/><path d="M9 8.5c0 3.5 3 6.5 6.5 6.5l1-1.5-2-1-1 .8a4 4 0 01-2-2l.8-1-1-2z"/></svg></a>
 </body>
 </html>
