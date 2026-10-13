@@ -23,6 +23,12 @@ Si publica este sitio sobre el mismo dominio, esas páginas dejarán de existir 
 Opciones: publicar este sitio primero en un subdominio de prueba (por ejemplo `nuevo.proactionconsultores.cl`), o dejar WordPress
 en una subcarpeta (`/blog/`) y copiar antes una respaldo completo (archivos + base de datos).
 
+## Subdominio de prueba
+
+1. En el panel del hosting (cPanel: *Dominios* o *Subdominios*) cree `nuevo.proactionconsultores.cl`, apuntando a una carpeta propia (por ejemplo `public_html/nuevo`). Esto no toca el WordPress actual.
+2. Suba allí el contenido del repositorio. En `contenido.php` deje `'es_prueba' => true`: agrega `noindex` a la página y `robots.txt` bloquea a los buscadores.
+3. Cuando esté todo aprobado, para publicar en el dominio definitivo ponga `'es_prueba' => false` y borre `robots.txt` (o cámbielo a `Allow: /`).
+
 ## Publicar en el hosting (PHP)
 
 1. Revise `contenido.php`: el **correo de contacto** (recibe el formulario), teléfonos, servicios y cifras. Dirección y horario están vacíos y no se muestran; complételos si quiere publicarlos.

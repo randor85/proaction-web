@@ -57,6 +57,9 @@ $wa = 'https://wa.me/' . preg_replace('/\D/', '', $ct['whatsapp']) . '?text=' . 
     <title><?= e($c['nombre']) ?> · <?= e($c['eslogan']) ?></title>
     <meta name="description" content="<?= e($c['descripcion_meta']) ?>">
     <meta name="theme-color" content="#071a2e">
+<?php if (!empty($c['es_prueba'])): ?>
+    <meta name="robots" content="noindex, nofollow">
+<?php endif; ?>
     <link rel="icon" type="image/png" href="<?= $rutaBase ?>assets/img/icono.png">
     <link rel="stylesheet" href="<?= $rutaBase ?>assets/css/style.css">
     <script src="<?= $rutaBase ?>assets/js/main.js" defer></script>

@@ -4,6 +4,9 @@
  * no hace falta tocar index.php. Textos tomados del sitio actual proactionconsultores.cl.
  */
 return [
+    // true = copia de prueba (subdominio): se oculta de Google. Cámbielo a false al publicar en el dominio definitivo.
+    'es_prueba' => true,
+
     'nombre'    => 'Proaction Consultores',
     'eslogan'   => 'Asesoría contable, tributaria y financiera para pymes',
     'titulo'    => 'Planifica el futuro de tu empresa ahora mismo',
